@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  rosserial_wiseglove.cpp
+  WindowsSocket.cpp
+  time.cpp
+  duration.cpp
+e:\rosserial_wiseglove\rosserial_wiseglove\ros_lib\duration.cpp(77): warning C4244: “*=”: 从“double”转换到“int32_t”，可能丢失数据
+e:\rosserial_wiseglove\rosserial_wiseglove\ros_lib\duration.cpp(78): warning C4244: “*=”: 从“double”转换到“int32_t”，可能丢失数据
+  正在生成代码...
+rosserial_wiseglove.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) class WiseGlove * __cdecl GetWiseGlove(void)" (__imp_?GetWiseGlove@@YAPAVWiseGlove@@XZ)，该符号在函数 _wmain 中被引用
+rosserial_wiseglove.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) void __cdecl DelWiseGlove(class WiseGlove *)" (__imp_?DelWiseGlove@@YAXPAVWiseGlove@@@Z)，该符号在函数 _wmain 中被引用
+E:\rosserial_wiseglove\rosserial_wiseglove\Debug\rosserial_wiseglove.exe : fatal error LNK1120: 2 个无法解析的外部命令
