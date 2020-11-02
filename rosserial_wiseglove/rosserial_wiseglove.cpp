@@ -95,9 +95,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	char sn[32]; // serial number
 	int num_sensor;
 	int num_pressure;
-	float angle_l[14]; // for one glove
-	float angle_r[14];
-	unsigned short elec_l[14]; // for collecting electrical signal value
+	float angle_l[15]; // for one glove
+	float angle_r[15];
+	unsigned short elec_l[15]; // for collecting electrical signal value
 	unsigned short elec_r[15];
 	//std::vector<double> angle_vec;
 	//double d_angle[14];
@@ -113,6 +113,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	printf("Finger sensors: %d, pressure sensors: %d\n", num_sensor, num_pressure);
 	g_pGlove_r->GetModel(model);
 	g_pGlove_r->GetManu(manu);
+
 	g_pGlove_r->GetSn(sn);
 	num_sensor = g_pGlove_r->GetNumOfSensor();  // Number of bend sensors
 	num_pressure = g_pGlove_r->GetNumOfPressure(); // Number of pressure sensors
@@ -134,10 +135,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	system("pause");
 
 	// Start publishing
-	std::vector<double> l_angle_vec(14);
-	std::vector<double> r_angle_vec(14);
-	std::vector<uint64_t> l_glove_elec_vec(14);
-	std::vector<uint64_t> r_glove_elec_vec(14);
+	std::vector<double> l_angle_vec(15);//(14);
+	std::vector<double> r_angle_vec(15);//(14);
+	std::vector<uint64_t> l_glove_elec_vec(15);//(14);
+	std::vector<uint64_t> r_glove_elec_vec(15);//(14);
 
 	/* Note that the definition and initialization should stay as close to .publish() as possible!!! */
 	ros::NodeHandle nh;
