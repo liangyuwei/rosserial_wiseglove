@@ -6,9 +6,13 @@ For time synchronization of dataglove and motion capture system, refer to the pa
 
  
 ## Requirements
-1. Install ROS on Windows.
-2. Optitrack Motive.
-3. Wiseglove(s) hardware (Used to be S14. Now we use S15, which consists of 15 sensors for one hand, including flexion/extension, abduction/adduction, and others).
+**Software:**  
+1. Install ROS on Windows. Check out [here](http://wiki.ros.org/Installation/Windows). Note that installing ROS on Windows requires the installation of VS2019.
+2. Optitrack Motive software for rigid body pose tracking.
+
+**Hardware:**  
+1. Optitrack motion capture system.
+2. A pair of Wiseglove's datagloves (Used to be S14. Now we use S15, which consists of 15 sensors for one hand, including flexion/extension, abduction/adduction, and others).
 
  
 ## Usage (together with another repo)
